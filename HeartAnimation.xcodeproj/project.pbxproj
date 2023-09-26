@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5248F082AC0EC48007C9A6A /* HeartAnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5248F072AC0EC48007C9A6A /* HeartAnimationApp.swift */; };
+		C5248F0A2AC0EC48007C9A6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5248F092AC0EC48007C9A6A /* ContentView.swift */; };
+		C5248F0C2AC0EC49007C9A6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5248F0B2AC0EC49007C9A6A /* Assets.xcassets */; };
+		C5248F0F2AC0EC49007C9A6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5248F0E2AC0EC49007C9A6A /* Preview Assets.xcassets */; };
+		C5248F152AC0EC49007C9A6A /* HeartAnimation Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C5248F142AC0EC49007C9A6A /* HeartAnimation Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C5248F1A2AC0EC49007C9A6A /* HeartAnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5248F192AC0EC49007C9A6A /* HeartAnimationApp.swift */; };
+		C5248F1C2AC0EC49007C9A6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5248F1B2AC0EC49007C9A6A /* ContentView.swift */; };
+		C5248F1E2AC0EC4A007C9A6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5248F1D2AC0EC4A007C9A6A /* Assets.xcassets */; };
+		C5248F212AC0EC4A007C9A6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5248F202AC0EC4A007C9A6A /* Preview Assets.xcassets */; };
+		C5248F2E2AC0EC92007C9A6A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5248F2D2AC0EC92007C9A6A /* Home.swift */; };
+		C5248F302AC0ECB9007C9A6A /* HeartParticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5248F2F2AC0ECB9007C9A6A /* HeartParticle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5248F162AC0EC49007C9A6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5248EFC2AC0EC48007C9A6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5248F132AC0EC49007C9A6A;
+			remoteInfo = "HeartAnimation Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C5248F272AC0EC4A007C9A6A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C5248F152AC0EC49007C9A6A /* HeartAnimation Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C5248F042AC0EC48007C9A6A /* HeartAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5248F072AC0EC48007C9A6A /* HeartAnimationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartAnimationApp.swift; sourceTree = "<group>"; };
+		C5248F092AC0EC48007C9A6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C5248F0B2AC0EC49007C9A6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5248F0E2AC0EC49007C9A6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C5248F142AC0EC49007C9A6A /* HeartAnimation Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HeartAnimation Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5248F192AC0EC49007C9A6A /* HeartAnimationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartAnimationApp.swift; sourceTree = "<group>"; };
+		C5248F1B2AC0EC49007C9A6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C5248F1D2AC0EC4A007C9A6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5248F202AC0EC4A007C9A6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C5248F2D2AC0EC92007C9A6A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C5248F2F2AC0ECB9007C9A6A /* HeartParticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartParticle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5248F012AC0EC48007C9A6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5248F112AC0EC49007C9A6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5248EFB2AC0EC48007C9A6A = {
+			isa = PBXGroup;
+			children = (
+				C5248F062AC0EC48007C9A6A /* HeartAnimation */,
+				C5248F182AC0EC49007C9A6A /* HeartAnimation Watch App */,
+				C5248F052AC0EC48007C9A6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5248F052AC0EC48007C9A6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5248F042AC0EC48007C9A6A /* HeartAnimation.app */,
+				C5248F142AC0EC49007C9A6A /* HeartAnimation Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5248F062AC0EC48007C9A6A /* HeartAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C5248F2B2AC0EC5A007C9A6A /* View */,
+				C5248F2C2AC0EC63007C9A6A /* Model */,
+				C5248F072AC0EC48007C9A6A /* HeartAnimationApp.swift */,
+				C5248F092AC0EC48007C9A6A /* ContentView.swift */,
+				C5248F0B2AC0EC49007C9A6A /* Assets.xcassets */,
+				C5248F0D2AC0EC49007C9A6A /* Preview Content */,
+			);
+			path = HeartAnimation;
+			sourceTree = "<group>";
+		};
+		C5248F0D2AC0EC49007C9A6A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C5248F0E2AC0EC49007C9A6A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C5248F182AC0EC49007C9A6A /* HeartAnimation Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				C5248F192AC0EC49007C9A6A /* HeartAnimationApp.swift */,
+				C5248F1B2AC0EC49007C9A6A /* ContentView.swift */,
+				C5248F1D2AC0EC4A007C9A6A /* Assets.xcassets */,
+				C5248F1F2AC0EC4A007C9A6A /* Preview Content */,
+			);
+			path = "HeartAnimation Watch App";
+			sourceTree = "<group>";
+		};
+		C5248F1F2AC0EC4A007C9A6A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C5248F202AC0EC4A007C9A6A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C5248F2B2AC0EC5A007C9A6A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5248F2D2AC0EC92007C9A6A /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C5248F2C2AC0EC63007C9A6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5248F2F2AC0ECB9007C9A6A /* HeartParticle.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5248F032AC0EC48007C9A6A /* HeartAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5248F282AC0EC4A007C9A6A /* Build configuration list for PBXNativeTarget "HeartAnimation" */;
+			buildPhases = (
+				C5248F002AC0EC48007C9A6A /* Sources */,
+				C5248F012AC0EC48007C9A6A /* Frameworks */,
+				C5248F022AC0EC48007C9A6A /* Resources */,
+				C5248F272AC0EC4A007C9A6A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5248F172AC0EC49007C9A6A /* PBXTargetDependency */,
+			);
+			name = HeartAnimation;
+			productName = HeartAnimation;
+			productReference = C5248F042AC0EC48007C9A6A /* HeartAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5248F132AC0EC49007C9A6A /* HeartAnimation Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5248F242AC0EC4A007C9A6A /* Build configuration list for PBXNativeTarget "HeartAnimation Watch App" */;
+			buildPhases = (
+				C5248F102AC0EC49007C9A6A /* Sources */,
+				C5248F112AC0EC49007C9A6A /* Frameworks */,
+				C5248F122AC0EC49007C9A6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HeartAnimation Watch App";
+			productName = "HeartAnimation Watch App";
+			productReference = C5248F142AC0EC49007C9A6A /* HeartAnimation Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5248EFC2AC0EC48007C9A6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					C5248F032AC0EC48007C9A6A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					C5248F132AC0EC49007C9A6A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = C5248EFF2AC0EC48007C9A6A /* Build configuration list for PBXProject "HeartAnimation" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5248EFB2AC0EC48007C9A6A;
+			productRefGroup = C5248F052AC0EC48007C9A6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5248F032AC0EC48007C9A6A /* HeartAnimation */,
+				C5248F132AC0EC49007C9A6A /* HeartAnimation Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5248F022AC0EC48007C9A6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5248F0F2AC0EC49007C9A6A /* Preview Assets.xcassets in Resources */,
+				C5248F0C2AC0EC49007C9A6A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5248F122AC0EC49007C9A6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5248F212AC0EC4A007C9A6A /* Preview Assets.xcassets in Resources */,
+				C5248F1E2AC0EC4A007C9A6A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5248F002AC0EC48007C9A6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5248F0A2AC0EC48007C9A6A /* ContentView.swift in Sources */,
+				C5248F2E2AC0EC92007C9A6A /* Home.swift in Sources */,
+				C5248F302AC0ECB9007C9A6A /* HeartParticle.swift in Sources */,
+				C5248F082AC0EC48007C9A6A /* HeartAnimationApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5248F102AC0EC49007C9A6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5248F1C2AC0EC49007C9A6A /* ContentView.swift in Sources */,
+				C5248F1A2AC0EC49007C9A6A /* HeartAnimationApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5248F172AC0EC49007C9A6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5248F132AC0EC49007C9A6A /* HeartAnimation Watch App */;
+			targetProxy = C5248F162AC0EC49007C9A6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C5248F222AC0EC4A007C9A6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C5248F232AC0EC4A007C9A6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		C5248F252AC0EC4A007C9A6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HeartAnimation Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HeartAnimation;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = jp.hackenbacker.HeartAnimation;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.hackenbacker.HeartAnimation.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		C5248F262AC0EC4A007C9A6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HeartAnimation Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HeartAnimation;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = jp.hackenbacker.HeartAnimation;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.hackenbacker.HeartAnimation.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		C5248F292AC0EC4A007C9A6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HeartAnimation/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HeartAnimation;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.hackenbacker.HeartAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5248F2A2AC0EC4A007C9A6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HeartAnimation/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HeartAnimation;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.hackenbacker.HeartAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5248EFF2AC0EC48007C9A6A /* Build configuration list for PBXProject "HeartAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5248F222AC0EC4A007C9A6A /* Debug */,
+				C5248F232AC0EC4A007C9A6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5248F242AC0EC4A007C9A6A /* Build configuration list for PBXNativeTarget "HeartAnimation Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5248F252AC0EC4A007C9A6A /* Debug */,
+				C5248F262AC0EC4A007C9A6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5248F282AC0EC4A007C9A6A /* Build configuration list for PBXNativeTarget "HeartAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5248F292AC0EC4A007C9A6A /* Debug */,
+				C5248F2A2AC0EC4A007C9A6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5248EFC2AC0EC48007C9A6A /* Project object */;
+}
