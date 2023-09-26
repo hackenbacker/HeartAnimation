@@ -62,11 +62,19 @@ struct Home: View {
                         .foregroundStyle(.white)
                     
                     HStack(alignment: .bottom, spacing: 6, content: {
-                        Text("\(heartBeat)")
-                            .font(.system(size: 45).bold())
-                            .contentTransition(.numericText(value: Double(heartBeat)))
-                            .foregroundStyle(.white)
-                        
+                        TimelineView(.animation(minimumInterval: 1.5, paused: false)) { timeline in
+                            Text("\(heartBeat)")
+                                .font(.system(size: 45).bold())
+                                .contentTransition(.numericText(value: Double(heartBeat)))
+                                .foregroundStyle(.white)
+                                .onChange(of: timeline.date) { oldValue, newValue in
+                                    if beatAnimation {
+                                        withAnimation(.bouncy) {
+                                            heartBeat = .random(in: 80...130)
+                                        }
+                                    }
+                                }
+                        }
                         Text("BPM")
                             .font(.callout.bold())
                             .foregroundStyle(.heart.gradient)
