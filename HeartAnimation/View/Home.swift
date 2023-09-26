@@ -20,22 +20,12 @@ struct Home: View {
             ZStack {
                 if showPulses {
                     TimelineView(.animation(minimumInterval: 0.7, paused: false)) { timeline in
-                        Canvas { context, size in
-                            // Drawing into the Canvas
-                            for heart in pulsedHearts {
-                                if let resolvedView = context.resolveSymbol(id: heart.id) {
-                                    let centerX = size.width / 2
-                                    let centerY = size.height / 2
-                                    
-                                    context.draw(resolvedView, at: CGPoint(x: centerX, y: centerY))
-                                }
-                            }
-                            
-                        } symbols: {
+
+                        /// Method 2
+                        ZStack {
                             // Inserting into Canvas with unique ID
-                            ForEach(pulsedHearts) {
+                            ForEach(pulsedHearts) { _ in
                                 PulseHeartView()
-                                    .id($0.id)
                             }
                         }
                         .onChange(of: timeline.date) { oldValue, newValue in
@@ -43,6 +33,31 @@ struct Home: View {
                                 addPulsedHeart()
                             }
                         }
+
+                        /// Method 1
+//                        Canvas { context, size in
+//                            // Drawing into the Canvas
+//                            for heart in pulsedHearts {
+//                                if let resolvedView = context.resolveSymbol(id: heart.id) {
+//                                    let centerX = size.width / 2
+//                                    let centerY = size.height / 2
+//                                    
+//                                    context.draw(resolvedView, at: CGPoint(x: centerX, y: centerY))
+//                                }
+//                            }
+//                            
+//                        } symbols: {
+//                            // Inserting into Canvas with unique ID
+//                            ForEach(pulsedHearts) {
+//                                PulseHeartView()
+//                                    .id($0.id)
+//                            }
+//                        }
+//                        .onChange(of: timeline.date) { oldValue, newValue in
+//                            if beatAnimation {
+//                                addPulsedHeart()
+//                            }
+//                        }
                     }
                 }
                 Image(systemName: "suit.heart.fill")
