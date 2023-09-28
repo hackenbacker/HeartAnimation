@@ -1,7 +1,8 @@
 # HeartAnimation
 WatchOS 10 Heart App Animation Using SwiftUI
 
-<img src="https://github.com/hackenbacker/image-host/blob/main/imgs/HeartAnimation/HeartAnimation-256.gif">
+| <img src="https://github.com/hackenbacker/image-host/blob/main/imgs/HeartAnimation/HeartAnimation-256.gif"> | <img width="256" src="HeartAnimation/Assets.xcassets/AppIcon.appiconset/AppIcon.png"> |
+|---|---|
 
 ## Introduction
 
